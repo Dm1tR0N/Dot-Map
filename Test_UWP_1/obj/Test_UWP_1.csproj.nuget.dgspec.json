@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ahish\\OneDrive\\Рабочий стол\\Курсач\\Test_UWP_1\\Test_UWP_1\\Test_UWP_1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ahish\\OneDrive\\Рабочий стол\\Курсач\\Test_UWP_1\\Test_UWP_1\\Test_UWP_1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ahish\\OneDrive\\Рабочий стол\\Курсач\\Test_UWP_1\\Test_UWP_1\\Test_UWP_1.csproj",
+        "projectName": "Test_UWP_1",
+        "projectPath": "C:\\Users\\ahish\\OneDrive\\Рабочий стол\\Курсач\\Test_UWP_1\\Test_UWP_1\\Test_UWP_1.csproj",
+        "packagesPath": "C:\\Users\\ahish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahish\\OneDrive\\Рабочий стол\\Курсач\\Test_UWP_1\\Test_UWP_1\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "E:\\Visual Studio\\2022\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.10240"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.10240": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.10240": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.1.7, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.0.11, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

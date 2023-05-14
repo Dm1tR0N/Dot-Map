@@ -1,0 +1,1 @@
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\Test_UWP_1.csproj;x64
