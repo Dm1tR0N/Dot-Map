@@ -4,8 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,6 +20,10 @@ using Windows.UI;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Core;
+using Windows.Storage.Streams;
+using Windows.Foundation;
+using Windows.UI.ViewManagement;
+using System.Threading;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -33,8 +35,8 @@ namespace Test_UWP_1
     public sealed partial class MainPage : Page
     {
         private Geolocator geolocator;
-        private MapIcon locationMarker;
-        
+        private MapIcon locationIcon;
+
         private bool isSelectingStartPoint = false;
         private bool isSelectingEndPoint = false;
         private Geopoint startPoint;
@@ -45,16 +47,81 @@ namespace Test_UWP_1
         // Цвета
         public SolidColorBrush RED_Notification = new SolidColorBrush(Colors.Red);
         public SolidColorBrush GREEN_Notification = new SolidColorBrush(Colors.Green);
+        public SolidColorBrush BLUE_Notification = new SolidColorBrush(Colors.Blue);
+
+        private CancellationTokenSource locationUpdateTokenSource;
+
+
         public MainPage()
         {
             this.InitializeComponent();
             mapControl.MapServiceToken = "35wISN8sOtCWorow7xE8~kFqkQNroOLGF4n0qIdTLfA~AqSmv4QThH7uxnbScEHHguCNdvVVsHlvfRiZzMqgtPJAAGrIlKaJn0SEKAMizS9q";
-            mapControl.Center = new Geopoint(new BasicGeoposition { Latitude = 56.493473, Longitude = 84.9493429 }); // Установите желаемые координаты центра карты
+            SetCurrentLocation();
             mapControl.ZoomLevel = 12; // Установите желаемый уровень масштабирования карты
             mapControl.Style = MapStyle.Road;
             this.Loaded += MainPage_Loaded;
 
-            //AddMapIcon(mapControl, new BasicGeoposition { Latitude = 56.455483, Longitude = 84.951491 }, "Название", "Что то");
+            geolocator = new Geolocator();
+            locationIcon = new MapIcon();
+            
+            // Настройка метки
+            locationIcon.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/LocationIcon.png")); // Измените путь к изображению на свое
+            locationIcon.NormalizedAnchorPoint = new Windows.Foundation.Point(0.5, 0.5);
+
+            // Добавление метки на карту
+            mapControl.MapElements.Add(locationIcon);
+
+            // Подписка на событие изменения местоположения
+            geolocator.PositionChanged += Geolocator_PositionChanged;
+
+
+            // Запуск получения местоположения
+            GetLocation();
+            menuGrid.SizeChanged += MenuGrid_SizeChanged;
+            
+        }
+
+        private void MenuGrid_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            // Получение текущей ширины menuGrid
+            double menuGridWidth = menuGrid.ActualWidth;
+
+            // Установка минимальной ширины окна
+            var currentView = ApplicationView.GetForCurrentView();
+            currentView.SetPreferredMinSize(new Size(menuGridWidth, 0));
+        }
+
+
+        private async void GetLocation()
+        {
+            Geoposition geoposition = await geolocator.GetGeopositionAsync();
+            UpdateLocation(geoposition.Coordinate.Point.Position);
+        }
+
+        private void Geolocator_PositionChanged(Geolocator sender, PositionChangedEventArgs args)
+        {
+            UpdateLocation(args.Position.Coordinate.Point.Position);
+        }
+
+        private async void UpdateLocation(BasicGeoposition position)
+        {
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                // mapControl.Center = new Geopoint(position);
+                locationIcon.Location = new Geopoint(position);
+                locationIcon.Title = $"Моё местоположение\n{position.Latitude}°, {position.Longitude}°";
+            });       
+        }
+
+        public async void SetCurrentLocation()
+        {
+            Geolocator geolocator = new Geolocator();
+            Geoposition geoposition = await geolocator.GetGeopositionAsync();
+
+            double latitude = geoposition.Coordinate.Point.Position.Latitude;
+            double longitude = geoposition.Coordinate.Point.Position.Longitude;
+
+            mapControl.Center = new Geopoint(new BasicGeoposition { Latitude = latitude, Longitude = longitude });
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
@@ -154,76 +221,7 @@ namespace Test_UWP_1
                     mapControl.Style = MapStyle.Road;
                     break;
             }
-        }
-        
-        
-        
-        // Обработчик события нажатия на элемент карты
-        // С 150 по 236 строки реализация работы с метками! Нужно доработать
-        // private void MapControl_MapElementClick(MapControl sender, MapElementClickEventArgs args)
-        // {
-        //     if (args.MapElements.Count > 0)
-        //     {
-        //         // Получение выбранного элемента карты
-        //         MapElement selectedElement = args.MapElements[0];
-        //
-        //         // Проверка, является ли элемент точкой интереса
-        //         if (selectedElement is MapIcon mapIcon)
-        //         {
-        //             // Создание объекта с данными о метке
-        //             MapMarkerData markerData = new MapMarkerData
-        //             {
-        //                 Title = "Название точки",
-        //                 Description = "Описание точки",
-        //                 ImageUrl = "URL изображения"
-        //                 // Добавьте другие свойства метки
-        //             };
-        //
-        //             // Отображение карточки с информацией о точке
-        //             ShowInfoCard(markerData);
-        //         }
-        //     }
-        // }
-
-        private void ShowInfoCard(MapMarkerData markerData)
-        {
-            // Создание карточки
-            TextBlock titleTextBlock = new TextBlock();
-            titleTextBlock.Text = markerData.Title;
-
-            TextBlock descriptionTextBlock = new TextBlock();
-            descriptionTextBlock.Text = markerData.Description;
-
-            Image image = new Image();
-            image.Source = new BitmapImage(new Uri(markerData.ImageUrl));
-
-            // Создание контейнера для карточки
-            StackPanel infoPanel = new StackPanel();
-            infoPanel.Background = new SolidColorBrush(Colors.White);
-            infoPanel.BorderThickness = new Thickness(1);
-            infoPanel.BorderBrush = new SolidColorBrush(Colors.Black);
-            infoPanel.Margin = new Thickness(10);
-            infoPanel.Padding = new Thickness(10);
-            infoPanel.Children.Add(titleTextBlock);
-            infoPanel.Children.Add(descriptionTextBlock);
-            infoPanel.Children.Add(image);
-
-            // Создание всплывающей панели
-            Popup infoPopup = new Popup();
-            infoPopup.Child = infoPanel;
-            infoPopup.IsOpen = true;
-            infoPopup.HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Center;
-            infoPopup.VerticalAlignment = Windows.UI.Xaml.VerticalAlignment.Center;
-
-            // Обработчик события закрытия всплывающей панели
-            infoPopup.Closed += (sender, e) =>
-            {
-                // Очистка ресурсов после закрытия карточки
-                infoPopup.Child = null;
-                infoPopup = null;
-            };
-        }
-
+        }    
 
         // Создание и добавление MapIcon на карту
         private void AddMapIcon(MapControl mapControl, BasicGeoposition location, string title, string description)
@@ -247,51 +245,7 @@ namespace Test_UWP_1
             mapControl.MapElements.Add(mapIcon);
         }
         
-        private void MenuButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (menuPanel.Visibility == Visibility.Collapsed)
-            {
-                // Показать меню с анимацией
-                menuPanel.Visibility = Visibility.Visible;
-                var showAnimation = new DoubleAnimation()
-                {
-                    From = 0,
-                    To = menuPanel.ActualWidth,
-                    Duration = TimeSpan.FromSeconds(0.3)
-                };
-        
-                // Создание Storyboard и добавление анимации
-                var storyboard = new Storyboard();
-                storyboard.Children.Add(showAnimation);
-                Storyboard.SetTarget(showAnimation, menuPanel);
-                Storyboard.SetTargetProperty(showAnimation, "(FrameworkElement.Width)");
-
-                // Запуск анимации
-                storyboard.Begin();
-            }
-            else if (menuPanel.Visibility == Visibility.Visible)
-            {
-                // Скрыть меню с анимацией
-                var hideAnimation = new DoubleAnimation()
-                {
-                    From = menuPanel.ActualWidth,
-                    To = 0,
-                    Duration = TimeSpan.FromSeconds(0.3)
-                };
-        
-                // Создание Storyboard и добавление анимации
-                var storyboard = new Storyboard();
-                storyboard.Children.Add(hideAnimation);
-                Storyboard.SetTarget(hideAnimation, menuPanel);
-                Storyboard.SetTargetProperty(hideAnimation, "(FrameworkElement.Width)");
-
-                menuPanel.Visibility = Visibility.Collapsed;
-
-
-                // Запуск анимации
-                storyboard.Begin();
-            }
-        }
+       
         
         private async Task<string> ReverseGeocodeAsync(BasicGeoposition location)
         {
@@ -354,11 +308,18 @@ namespace Test_UWP_1
 
         private void ShowRouteInformation(double lengthInKilometers, TimeSpan estimatedDuration)
         {
-            string lengthString = string.Format("Длина маршрута: {0} км", lengthInKilometers.ToString("0.00"));
-            string durationString = string.Format("Примерное время езды: {0} часов, {1} минут ", estimatedDuration.ToString(@"hh"), estimatedDuration.ToString(@"mm"));
+            try
+            {
+                string lengthString = string.Format("Длина маршрута: {0} км", lengthInKilometers.ToString("0.00"));
+                string durationString = string.Format("Примерное время езды: {0} день, {1} часов, {2} минут ", estimatedDuration.ToString(@"dd"), estimatedDuration.ToString(@"hh"), estimatedDuration.ToString(@"mm"));
 
-            // Выводим информацию о маршруте
-            notificationManager.ShowNotification("Маршрут построен.", $"{lengthString}\n{durationString}", GREEN_Notification);
+                // Выводим информацию о маршруте
+                notificationManager.ShowNotification("Маршрут построен.", $"{lengthString}\n{durationString}", GREEN_Notification);
+            }
+            catch (Exception ex)
+            {
+                notificationManager.ShowNotification("Ошибка!", $"Непредвиденная ошибка!\n ERROR({ex.Message})", RED_Notification);
+            }
         }
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
@@ -373,6 +334,10 @@ namespace Test_UWP_1
             {
                 await BuildRoute();
                 await UpdateMap();
+            }
+            else
+            {
+                notificationManager.ShowNotification("Ошибка.", $"Заполните все поля!", RED_Notification);
             }
         }
 

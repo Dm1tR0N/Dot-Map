@@ -221,3 +221,5 @@ C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\NotificationControl.g.cs
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\NotificationControl.xaml
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\NotificationControl.xbf
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\resources.en-us.resfiles
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\resources.en-us.resfiles.intermediate

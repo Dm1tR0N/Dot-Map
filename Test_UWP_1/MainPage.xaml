@@ -13,16 +13,17 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="menuGrid" Grid.Row="0" Background="LightGray">
+        <Grid x:Name="menuGrid" Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel x:Name="menuPanel" Grid.Column="1" Visibility="Visible" HorizontalAlignment="Left" Orientation="Horizontal">
+            <StackPanel x:Name="menuPanel" Grid.Column="1" Visibility="Visible" HorizontalAlignment="Left" Orientation="Horizontal" SizeChanged="MenuGrid_SizeChanged">
                 <TextBox 
                     x:Name="searchTextBox" 
                     PlaceholderText="Введите название города"
@@ -70,8 +71,16 @@
                         Margin="10,0,0,5"/>
             </StackPanel>
         </Grid>
-        <maps:MapControl x:Name="mapControl" MapElementClick="MapControl_MapElementClick" Grid.Row="1"/>
-        <StackPanel Orientation="Vertical" Grid.Row="1">
+        <!--<StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock 
+                    Text="Следить за изменением местоположения"
+                    Margin="10,0,10,0"
+                    VerticalAlignment="Center"
+                    />
+            <CheckBox x:Name="checkLocation" IsChecked="True"/>
+        </StackPanel>-->
+        <maps:MapControl x:Name="mapControl" MapElementClick="MapControl_MapElementClick" Grid.Row="2"/>
+        <StackPanel Orientation="Vertical" Grid.Row="2">
             <local:NotificationControl x:Name="notificationControl" Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
