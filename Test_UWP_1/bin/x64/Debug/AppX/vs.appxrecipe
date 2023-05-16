@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-14T14:44:50.147</Modified>
+      <Modified>2023-05-15T08:15:09.016</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Test_UWP_1.exe">
       <PackagePath>entrypoint\Test_UWP_1.exe</PackagePath>
-      <Modified>2023-05-14T14:44:49.220</Modified>
+      <Modified>2023-05-15T08:15:08.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -533,7 +533,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Test_UWP_1.xr.xml">
       <PackagePath>Test_UWP_1.xr.xml</PackagePath>
-      <Modified>2023-05-14T12:24:53.002</Modified>
+      <Modified>2023-05-15T08:14:26.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -541,11 +541,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-05-14T12:24:53.009</Modified>
+      <Modified>2023-05-15T08:14:26.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\NotificationControl.xbf">
       <PackagePath>NotificationControl.xbf</PackagePath>
-      <Modified>2023-05-14T11:45:43.603</Modified>
+      <Modified>2023-05-15T08:07:10.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -557,7 +557,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\Test_UWP_1.exe">
       <PackagePath>Test_UWP_1.exe</PackagePath>
-      <Modified>2023-05-14T14:44:50.126</Modified>
+      <Modified>2023-05-15T08:15:09.008</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

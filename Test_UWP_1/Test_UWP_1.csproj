@@ -7,8 +7,8 @@
     <ProjectGuid>{51FD5DE6-AE59-466F-982D-09C3BC2D7896}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test_UWP_1</RootNamespace>
-    <AssemblyName>Test_UWP_1</AssemblyName>
+    <RootNamespace>Dot_Map</RootNamespace>
+    <AssemblyName>Dot_Map</AssemblyName>
     <DefaultLanguage>ru-ru</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.22000.0</TargetPlatformVersion>

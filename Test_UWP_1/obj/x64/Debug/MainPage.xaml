@@ -23,7 +23,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel x:ConnectionId='4' x:Name="menuPanel" Grid.Column="1" Visibility="Visible" HorizontalAlignment="Left" Orientation="Horizontal"                                   >
+            <StackPanel x:ConnectionId='4' x:Name="menuPanel" Grid.Column="1" Visibility="Visible" HorizontalAlignment="Left" Orientation="Horizontal">
                 <TextBox x:ConnectionId='5' 
                     x:Name="searchTextBox" 
                     PlaceholderText="Введите название города"

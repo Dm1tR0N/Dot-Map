@@ -77,14 +77,22 @@ namespace Test_UWP_1
 
             // Запуск получения местоположения
             GetLocation();
-            menuGrid.SizeChanged += MenuGrid_SizeChanged;
-            
+            // menuGrid.SizeChanged += MenuGrid_SizeChanged;
+            MenuGrid_SizeChanged();
+
         }
 
-        private void MenuGrid_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void MenuGrid_SizeChanged()
         {
+            // Получение текущего объекта представления окна
+            var currentView1 = ApplicationView.GetForCurrentView();
+
+            // Установка желаемых размеров окна
+            currentView1.SetPreferredMinSize(new Size(1500, 400));
+            currentView1.TryResizeView(new Size(1500, 400));
             // Получение текущей ширины menuGrid
-            double menuGridWidth = menuGrid.ActualWidth;
+            double menuGridWidth = menuGrid.ActualWidth + 300;
+            
 
             // Установка минимальной ширины окна
             var currentView = ApplicationView.GetForCurrentView();

@@ -13,7 +13,7 @@ namespace Test_UWP_1
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-    private global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
+    private global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
@@ -22,7 +22,7 @@ namespace Test_UWP_1
         {
             if(_provider == null)
             {
-                _provider = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -34,7 +34,7 @@ namespace Test_UWP_1
         {
             if(_provider == null)
             {
-                _provider = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -49,7 +49,7 @@ namespace Test_UWP_1
     }
 }
 
-namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
+namespace Dot_Map.Test_UWP_1_XamlTypeInfo
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -182,8 +182,8 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlUserType userType;
+            global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -191,25 +191,25 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
             {
 
             case 0:   //  Test_UWP_1.NotificationControl
-                userType = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_0_NotificationControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Test_UWP_1.MainPage
-                userType = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_2_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 3:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -219,7 +219,7 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlMember xamlMember = null;
+            global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -274,9 +274,9 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlSystemBaseType
     {
-        global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -290,7 +290,7 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -482,7 +482,7 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -491,7 +491,7 @@ namespace Test_UWP_1.Test_UWP_1_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::Test_UWP_1.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::Dot_Map.Test_UWP_1_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

@@ -32,7 +32,6 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootEvent Name="SizeChanged" />
     </RootType>
     <RootType FullName="Test_UWP_1.NotificationControl">
       <RootProperty Name="Visibility" />

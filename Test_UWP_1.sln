@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_UWP_1", "Test_UWP_1\Test_UWP_1.csproj", "{51FD5DE6-AE59-466F-982D-09C3BC2D7896}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotMapApi", "DotMapApi\DotMapApi.csproj", "{3DAA1265-003F-4E9C-894C-33F8EA854A23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -30,5 +32,17 @@ Global
 		{51FD5DE6-AE59-466F-982D-09C3BC2D7896}.Release|x86.ActiveCfg = Release|x86
 		{51FD5DE6-AE59-466F-982D-09C3BC2D7896}.Release|x86.Build.0 = Release|x86
 		{51FD5DE6-AE59-466F-982D-09C3BC2D7896}.Release|x86.Deploy.0 = Release|x86
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|ARM.Build.0 = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|x64.Build.0 = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Debug|x86.Build.0 = Debug|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|ARM.ActiveCfg = Release|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|ARM.Build.0 = Release|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|x64.ActiveCfg = Release|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|x64.Build.0 = Release|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|x86.ActiveCfg = Release|Any CPU
+		{3DAA1265-003F-4E9C-894C-33F8EA854A23}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

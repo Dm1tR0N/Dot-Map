@@ -223,3 +223,8 @@ C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\NotificationControl.xbf
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\resources.en-us.resfiles
 C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\resources.en-us.resfiles.intermediate
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.xr.xml
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.exe
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.pdb
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\Dot_Map.exe
+C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\Dot_Map.pdb
