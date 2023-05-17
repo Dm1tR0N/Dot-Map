@@ -11,7 +11,8 @@ CREATE TABLE Places (
     Id SERIAL PRIMARY KEY,
     Name VARCHAR(255) NOT NULL,
     Description TEXT,
-    LocationId INT REFERENCES Location(Id) ON DELETE CASCADE,
+    Latitude DOUBLE PRECISION,
+    Longitude DOUBLE PRECISION
     Photo BYTEA
 );
 
@@ -20,8 +21,8 @@ CREATE TABLE Reviews (
     Id SERIAL PRIMARY KEY,
     Comment TEXT,
     Rating INT,
-    UserId INT REFERENCES Users(Id) ON DELETE CASCADE,
-    PlaceId INT REFERENCES Places(Id) ON DELETE CASCADE
+    User INT,
+    PlaceId
 );
 
 -- Создание таблицы "Location"

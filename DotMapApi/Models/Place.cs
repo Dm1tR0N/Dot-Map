@@ -14,6 +14,4 @@ public class Place
 
     public double Latitude { get; set; } 
     public double Longitude { get; set; }
-
-    public byte[] Photo { get; set; }
 }

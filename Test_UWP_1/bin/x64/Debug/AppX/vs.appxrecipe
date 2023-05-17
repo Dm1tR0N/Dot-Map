@@ -11,31 +11,32 @@
     <PackageIdentityName>9924836e-d7cf-493b-82f1-df238f8fb7c7</PackageIdentityName>
     <PackageIdentityPublisher>CN=ahish</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\obj\x64\Debug\</IntermediateOutputPath>
-    <RemoteDeploymentType></RemoteDeploymentType>
-    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>5E0BA11F2DB8E56932E24509092B8947E23F73770D2A951D8DC24B48EFA8F4C3</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>51A2D7C712C1D396D3EB1303008AA155EBA539BCE79EBE250E9BDCEA95A5E3D6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9924836e-d7cf-493b-82f1-df238f8fb7c7_1.0.0.0_x64__9eykksax7jr62</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9924836e-d7cf-493b-82f1-df238f8fb7c7_9eykksax7jr62!App</RegisteredUserModeAppID>
     <RegisteredPackageID>9924836e-d7cf-493b-82f1-df238f8fb7c7</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=ahish</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-17T04:01:40.952</Modified>
+      <Modified>2023-05-17T04:17:37.961</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.exe">
       <PackagePath>entrypoint\Dot_Map.exe</PackagePath>
-      <Modified>2023-05-17T04:01:40.198</Modified>
+      <Modified>2023-05-17T04:17:36.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -537,15 +538,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-05-14T04:14:29.229</Modified>
+      <Modified>2023-05-17T04:12:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-05-15T08:14:26.406</Modified>
+      <Modified>2023-05-17T04:12:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\NotificationControl.xbf">
       <PackagePath>NotificationControl.xbf</PackagePath>
-      <Modified>2023-05-15T08:07:10.757</Modified>
+      <Modified>2023-05-17T04:12:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -553,11 +554,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-17T04:00:46.289</Modified>
+      <Modified>2023-05-17T04:17:37.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\Dot_Map.exe">
       <PackagePath>Dot_Map.exe</PackagePath>
-      <Modified>2023-05-17T04:01:40.944</Modified>
+      <Modified>2023-05-17T04:17:37.952</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -567,7 +568,8 @@
       <Architecture>ARM</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.27004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
@@ -575,7 +577,8 @@
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.27004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x64\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
@@ -583,7 +586,8 @@
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.27004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x86\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
@@ -591,7 +595,8 @@
       <Architecture>ARM</Architecture>
       <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
@@ -599,7 +604,8 @@
       <Architecture>ARM64</Architecture>
       <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
@@ -607,7 +613,8 @@
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
@@ -615,7 +622,8 @@
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
-      <MoreInfo></MoreInfo>
+      <MoreInfo>
+      </MoreInfo>
     </ResolvedSDKReference>
   </ItemGroup>
 </Project>
