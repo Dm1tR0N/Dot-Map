@@ -17,7 +17,8 @@ public class PlaceRepository : IPlaceRepository
 
     public IEnumerable<Place> GetAllPlaces()
     {
-        return _context.Places;
+        var result = _context.Places.ToList();
+        return result;
     }
 
     public Place GetPlaceById(int id)

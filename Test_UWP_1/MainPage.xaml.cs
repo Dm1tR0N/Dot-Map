@@ -78,7 +78,7 @@ namespace Test_UWP_1
             // Запуск получения местоположения
             GetLocation();
             // menuGrid.SizeChanged += MenuGrid_SizeChanged;
-            MenuGrid_SizeChanged();
+            //MenuGrid_SizeChanged();
 
         }
 

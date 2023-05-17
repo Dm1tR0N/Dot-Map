@@ -17,7 +17,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>2EB255EDBF3440677DDC01315549D1C5D7410FA07EB44DE1A1D86D588E482E28</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5E0BA11F2DB8E56932E24509092B8947E23F73770D2A951D8DC24B48EFA8F4C3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9924836e-d7cf-493b-82f1-df238f8fb7c7_1.0.0.0_x64__9eykksax7jr62</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9924836e-d7cf-493b-82f1-df238f8fb7c7_9eykksax7jr62!App</RegisteredUserModeAppID>
     <RegisteredPackageID>9924836e-d7cf-493b-82f1-df238f8fb7c7</RegisteredPackageID>
@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-15T08:15:09.016</Modified>
+      <Modified>2023-05-17T04:01:40.952</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Test_UWP_1.exe">
-      <PackagePath>entrypoint\Test_UWP_1.exe</PackagePath>
-      <Modified>2023-05-15T08:15:08.276</Modified>
+    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.exe">
+      <PackagePath>entrypoint\Dot_Map.exe</PackagePath>
+      <Modified>2023-05-17T04:01:40.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -531,9 +531,9 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-05-14T04:12:27.845</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Test_UWP_1.xr.xml">
-      <PackagePath>Test_UWP_1.xr.xml</PackagePath>
-      <Modified>2023-05-15T08:14:26.368</Modified>
+    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Dot_Map.xr.xml">
+      <PackagePath>Dot_Map.xr.xml</PackagePath>
+      <Modified>2023-05-15T11:29:14.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -553,11 +553,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-14T14:27:05.750</Modified>
+      <Modified>2023-05-17T04:00:46.289</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\Test_UWP_1.exe">
-      <PackagePath>Test_UWP_1.exe</PackagePath>
-      <Modified>2023-05-15T08:15:09.008</Modified>
+    <AppxPackagedFile Include="C:\Users\ahish\OneDrive\Рабочий стол\Курсач\Test_UWP_1\Test_UWP_1\bin\x64\Debug\Core\Dot_Map.exe">
+      <PackagePath>Dot_Map.exe</PackagePath>
+      <Modified>2023-05-17T04:01:40.944</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
