@@ -16,56 +16,6 @@ public class ReviewController : ControllerBase
         _reviewRepository = reviewRepository;
     }
 
-    // [HttpGet]
-    // public IActionResult GetAllPlaces()
-    // {
-    //     var places = _reviewRepository.GetAllPlaces();
-    //     return Ok(places);
-    // }
-    //
-    // [HttpGet("{id}")]
-    // public IActionResult GetPlaceById(int id)
-    // {
-    //     var place = _reviewRepository.GetPlaceById(id);
-    //     if (place == null)
-    //     {
-    //         return NotFound();
-    //     }
-    //     return Ok(place);
-    // }
-    //
-    // [HttpPost]
-    // public IActionResult AddPlace(Place place)
-    // {
-    //     var addedPlace = _reviewRepository.AddPlace(place);
-    //     return CreatedAtAction(nameof(GetPlaceById), new { id = addedPlace.Id }, addedPlace);
-    // }
-    //
-    // [HttpPut("{id}")]
-    // public IActionResult UpdatePlace(int id, Place place)
-    // {
-    //     if (id != place.Id)
-    //     {
-    //         return BadRequest();
-    //     }
-    //
-    //     _reviewRepository.UpdatePlace(place);
-    //     return NoContent();
-    // }
-    //
-    // [HttpDelete("{id}")]
-    // public IActionResult DeletePlace(int id)
-    // {
-    //     var place = _reviewRepository.GetPlaceById(id);
-    //     if (place == null)
-    //     {
-    //         return NotFound();
-    //     }
-    //
-    //     _reviewRepository.DeletePlace(id);
-    //     return NoContent();
-    // }
-
     [HttpGet("{placeId}/reviews")]
     public IActionResult GetReviewsForPlace(int placeId)
     {
