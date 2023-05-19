@@ -28,11 +28,16 @@ public class UserRepository : IUserRepository
 
     public User AddUser(User user)
     {
+        // Проверка на уникальность логина
+        if (_context.Users.Any(u => u.Username == user.Username))
+        {
+            throw new Exception("Пользователь с таким логином уже существует");
+        }
+
         _context.Users.Add(user);
         _context.SaveChanges();
         return user;
     }
-
     public void UpdateUser(User user)
     {
         _context.Entry(user).State = EntityState.Modified;

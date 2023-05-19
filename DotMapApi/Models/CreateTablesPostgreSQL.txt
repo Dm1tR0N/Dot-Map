@@ -13,7 +13,6 @@ CREATE TABLE Places (
     Description TEXT,
     Latitude DOUBLE PRECISION,
     Longitude DOUBLE PRECISION
-    Photo BYTEA
 );
 
 -- Создание таблицы "Reviews"
@@ -23,11 +22,4 @@ CREATE TABLE Reviews (
     Rating INT,
     User INT,
     PlaceId
-);
-
--- Создание таблицы "Location"
-CREATE TABLE Location (
-    Id SERIAL PRIMARY KEY,
-    Latitude DOUBLE PRECISION,
-    Longitude DOUBLE PRECISION
 );
